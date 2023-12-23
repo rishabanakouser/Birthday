@@ -1,0 +1,78 @@
+
+*{
+
+box-sizing: border-box;
+   
+}
+   
+body{
+background-color: #000C1C;
+font-family: "Poppins", sans-serif;
+background-size: auto;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-position: center center;
+margin: 0;
+   
+}
+   
+
+   
+h1{
+font-size: 60px;
+margin-top: -2rem;
+background: linear-gradient(to right,#30CFD0 0%,#330867 100%);
+-webkit-background-clip: text;
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+   
+}
+   
+.big-text{
+color: aliceblue;
+font-size: 40px;
+padding: 8px 48px;
+
+
+}
+   
+.countdown-el{  
+text-align: center;
+   
+}
+@media (max-width: 600px) {
+   .big-text {
+     font-size: 20px; /* Reduce the font size */
+     padding: 4px 24px; /* Reduce the padding */
+   }
+ } 
+ 
+/* confetti container */
+.confetti-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+   z-index: 10;
+   overflow: hidden;
+ }
+ 
+ /* confetti animation */
+ .confetti {
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   opacity: 0;
+   transition: opacity 0.5s ease-in;
+ }
+ 
+ 
+ 
+   
